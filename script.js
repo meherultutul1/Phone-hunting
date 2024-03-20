@@ -90,7 +90,7 @@ const phoneDetails = async(id) => {
 const showModal = (phoneId) => {
   const phoneDetails = document.getElementById('phone-details')
   phoneDetails.innerHTML = `
-  <img width="100px" class="mx-auto" src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-pro.jpg" alt="">
+  <img width="100px" class="mx-auto" src="${phoneId.image}" alt="">
   <br>
           <h4 class="text-xl">Name:  ${phoneId.name}</h4>
           <p class="font-bold">Release Date:  ${phoneId.releaseDate}</p>
